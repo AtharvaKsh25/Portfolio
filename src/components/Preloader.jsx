@@ -15,6 +15,7 @@ const Preloader = () => {
           setTimeout(() => setIsLoading(false), 800);
           return prev;
         }
+        return prev + 1;
       });
     }, 500);
 
@@ -32,6 +33,7 @@ const Preloader = () => {
         <span className="w-2 h-2 bg-text-main rounded-full absolute left-4"></span>
         <AnimatePresence mode="wait">
           <motion.span
+            key={index}
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -15 }}
