@@ -69,16 +69,15 @@ const Hero = () => {
         transition={{ delay: 2.8, duration: 1 }}
         className="absolute bottom-[2rem] left-[2rem] md:bottom-[3rem] md:left-[4rem] right-[2rem] md:right-[4rem] flex justify-between items-end"
       >
-        <div className="flex gap-4 text-small">
-          <a href="/RESUME11.pdf" target="_blank" rel="noreferrer" download className="hover:text-text-main transition-colors">
-            RESUME
+        <div className="flex gap-6 text-small items-center">
+          <a href={`${import.meta.env.BASE_URL}RESUME11.pdf`} target="_blank" rel="noreferrer" download className="bg-white/10 border border-white/20 text-white px-5 py-2 rounded-full shadow hover:bg-white hover:text-black transition-all duration-300 font-medium">
+            ↓ DOWNLOAD RESUME
           </a>
-          <span>/</span>
-          <a href="https://github.com/AtharvaKsh25" target="_blank" rel="noreferrer" className="hover:text-text-main transition-colors">
+          <a href="https://github.com/AtharvaKsh25" target="_blank" rel="noreferrer" className="hover:text-text-main transition-colors ml-2">
             GITHUB
           </a>
           <span>/</span>
-          <a href="https://linkedin.com/in/AtharvaKshirsagar" target="_blank" rel="noreferrer" className="hover:text-text-main transition-colors">
+          <a href="https://www.linkedin.com/in/atharva-kshirsagar-4449b4259/" target="_blank" rel="noreferrer" className="hover:text-text-main transition-colors">
             LINKEDIN
           </a>
         </div>
